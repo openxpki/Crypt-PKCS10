@@ -45,6 +45,7 @@ my %oids = (
     '1.2.840.113549.1.9.1'          => 'emailAddress',
     '1.2.840.113549.1.9.2'          => 'unstructuredName',
     '1.2.840.113549.1.9.7'          => 'challengePassword',
+    '1.2.840.113549.1.9.8'          => 'unstructuredAddress',
     '1.2.840.113549.1.1.1'          => [ 'rsaEncryption', 'RSA encryption' ],
     '1.2.840.113549.1.1.5'          => [ 'sha1WithRSAEncryption', 'SHA1 with RSA encryption' ],
     '1.2.840.113549.1.1.4'          => [ 'md5WithRSAEncryption', 'MD5 with RSA encryption' ],
