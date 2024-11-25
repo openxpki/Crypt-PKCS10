@@ -758,6 +758,10 @@ sub _new {
 	  confess( "decode: " . $parser->error .
 		   "Cannot handle input or missing ASN.1 definitions" );
 
+
+    # BMPString is deprecated in subject but still seen in the wild
+    $self->_scanvalue($top->{certificationRequestInfo}{subject});
+
     $self->{certificationRequestInfo}{subject_raw}
         = $top->{certificationRequestInfo}{subject};
 
