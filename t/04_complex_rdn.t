@@ -5,6 +5,10 @@ use warnings;
 
 use Test::More 0.94;
 
+unless( eval { require Crypt::PK::RSA; } ) {
+    plan skip_all => "Crypt::PK::RSA is not installed; skipping RSA tests";
+}
+
 plan tests => 2;
 use Crypt::PKCS10;
 
